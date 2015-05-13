@@ -1,0 +1,190 @@
+var bcrypt = require('bcrypt-nodejs');
+
+module.exports = [
+	{
+		_id: '53aa4c843bd562c01edd2714',
+		fname: 'Zachary',
+		lname: 'Nevin',
+		email: 'zachary@thegraduate.asia',
+		phone_number: 6043600110,
+		verified: true,
+		age: 21,
+		gender: 'male',
+		role: 'tutor',
+		created_at: new Date().toISOString(),
+		updated_at: new Date().toISOString(),
+		subjects: [{
+			category: { en: 'physics' },
+			levels: [{ en: 'University' }]
+		}, {
+			category: { en: 'computer Science' },
+			levels: [{ en: 'University' }, { en: 'GCSE' }]
+		}, {
+			category: { en: 'mathematics' },
+			levels: [{ en: 'GCSE' }]
+		}],
+		qualifications: [{
+			_id: '53ae6bfc02dda69463d66887',
+			title: { en: 'Bsc. Mathematics' },
+			description: { en: 'University of British Columbia' },
+			start: new Date(2006, 08).toISOString(),
+			end: new Date(2009, 05).toISOString(),
+			created_at: new Date().toISOString(),
+			updated_at: new Date().toISOString()
+		}],
+		experience: [],
+		location: {
+			coordinates: { type: 'Point', coordinates: [114, 22] }
+		},
+		preferences: {
+			default_price: 300,
+			default_currency: 'HKD'
+		},
+		statistics: {
+			number_of_ratings: 3,
+			hours_tutored: 34
+		},
+		resume: {
+			text: { 
+				en: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel adipiscing nisi, placerat sagittis arcu. Maecenas luctus eu neque ultrices gravida. Sed lacus eros, varius et consequat a, fermentum sed lorem. Proin vehicula erat metus, ac porttitor nisl varius at. Suspendisse congue augue nec neque interdum rhoncus nec vitae turpis. Etiam viverra pretium dolor a condimentum. Praesent posuere nulla odio, id auctor neque lacinia at. Vivamus pharetra lectus tempor mi convallis, eget molestie odio blandit. In id ligula pharetra, pulvinar enim ac, lobortis nunc. Nunc dui tellus, tincidunt vel rutrum sit amet, consectetur sit amet justo. Praesent id mauris laoreet.'
+			}
+		}
+	},
+	{
+		_id: '53aa4c843bd562c01edd2713',
+		fname: 'Marek',
+		lname: 'Sivak',
+		phone_number: 6043600111,
+		verified: true,
+		email: 'm.sivak@gmail.com',
+		age: 29,
+		gender: 'male',
+		role: 'tutor',
+		created_at: new Date().toISOString(),
+		updated_at: new Date().toISOString(),
+		subjects: [{
+			category: { en: 'physics' },
+			levels: [{ en: 'GCSE' }]
+		}, {
+			category: { en: 'computer Science' },
+			levels: [{ en: 'University' }, { en: 'GCSE' }]
+		}, {
+			category: { en: 'mathematics' },
+			levels: [{ en: 'University' }]
+		}],
+		location: {
+			coordinates: { type: 'Point', coordinates: [114.152069, 22.266858] }
+		},
+		resume: {
+			text: { 
+				en: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo lectus nisl, in sollicitudin felis aliquam non. Phasellus sodales feugiat eros ac scelerisque. Nullam a est sed eros molestie tincidunt eu ac elit. Aenean placerat varius ultrices. Fusce neque eros, dignissim et felis vitae, consectetur lacinia dui. Sed at felis ac nulla consequat volutpat. Nam rhoncus bibendum mollis. Sed orci risus, consectetur commodo ante a, faucibus faucibus orci. Phasellus purus arcu, ornare id cursus vel, gravida ac elit. Sed sit amet tellus euismod, malesuada neque vel, lacinia enim. Pellentesque venenatis.'
+			}
+		},
+		qualifications: [{
+			_id: '53ae6bfc02dda69463d68894',
+			title: { en: 'Psychology' },
+			description: { en: 'Governors State University' },
+			start: new Date(2006, 08),
+			end: new Date(2009, 05),
+			created_at: new Date().toISOString(),
+			updated_at: new Date().toISOString()
+		},
+		{
+			_id: '53ae6bfc02dda69463d68895',
+			title: { en: 'BSc. Chemistry' },
+			description: { en: 'University of British Columbia' },
+			start: new Date(2010, 09),
+			end: new Date(2015, 05),
+			created_at: new Date().toISOString(),
+			updated_at: new Date().toISOString()
+		}],
+		statistics: {
+			average_rating: 8.5,
+			number_of_ratings: 19,
+			hours_tutored: 20
+		},
+		preferences: {}
+	},
+	{
+		_id: '53aa4c843bd562c01edd2712',
+		fname: 'Gabriela',
+		lname: 'Hernandez',
+		phone_number: 6043600112,
+		email: 'g.hernandez@gmail.com',
+		age: 20,
+		gender: 'female',
+		role: 'tutor',
+		created_at: new Date().toISOString(),
+		updated_at: new Date().toISOString(),
+		location: {
+			coordinates: { type: 'Point', coordinates: [114.152069, 22.266858] }
+		},
+		qualifications: [{
+			_id: '53ae6bfc02dda69463d66841',
+			title: { en: 'Bsc. Computer Science' },
+			description: { en: 'University of British Columbia' },
+			start: new Date(2006, 08).toISOString(),
+			end: new Date(2009, 05).toISOString(),
+			created_at: new Date().toISOString(),
+			updated_at: new Date().toISOString()
+		}],
+		subjects: [{
+			category: { en: 'history' },
+			levels: [{ en: 'IB SL' }]
+		}, {
+			category: { en: 'mathematics' },
+			levels: [{ en: 'IB HL' }] 
+		}],
+		preferences: {
+			default_amount: 300,
+			default_currency: 'HKD'
+		}
+	},
+	{
+		_id: '53aa4ca13bd562c01edd2717',
+		fname: 'Tony',
+		lname: 'Stark',
+		email: 't.stark@gmail.com',
+		phone_number: 6043600113,
+		verified: true,
+		age: 35,
+		gender: 'male',
+		role: 'tutor',
+		preferences: {},
+		qualifications: [{
+			_id: '53ae6bfc02dda69463d66758',
+			title: { en: 'Bsc. Robotics' },
+			description: { en: 'MIT' },
+			start: new Date(2006, 08).toISOString(),
+			end: new Date(2009, 05).toISOString(),
+			created_at: new Date().toISOString(),
+			updated_at: new Date().toISOString()
+		}],
+		experience: [{
+			_id: '53ae6bfc02dda69463d66758',
+			title: { en: 'Stark Industries' },
+			description: { en: 'CEO' },
+			start: new Date(2006, 08).toISOString(),
+			end: null,
+			created_at: new Date().toISOString(),
+			updated_at: new Date().toISOString()
+		}],
+		created_at: new Date().toISOString(),
+		updated_at: new Date().toISOString(),
+		subjects: [{
+			category: { en: 'history' },
+			levels: [{ en: 'University' }] 
+		}, {
+			category: { en: 'mathematics' },
+			levels: [{ en: 'University' }, { en: 'GCSE' }]
+		}],
+		location: {
+			coordinates: { type: 'Point', coordinates: [114.152069, 22.266858] }
+		},
+		resume: {
+			text: {
+				en: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis, felis vestibulum consequat euismod, lectus ligula fermentum orci, a dignissim lectus nisl quis dolor. Etiam quis varius enim. Etiam pulvinar malesuada urna, eu malesuada ligula convallis ac. Suspendisse dui nisl, egestas eget convallis eget, pulvinar et nulla. Integer rutrum erat in interdum varius. Aenean cursus, purus eget malesuada dictum, nulla tortor pellentesque sapien, non lobortis libero felis gravida enim. Duis dignissim, dolor a pulvinar fringilla, metus orci blandit dolor, sit amet imperdiet diam orci eget tellus. Aenean velit velit, vehicula eget eleifend congue, consequat sed.'
+			}
+		}
+	}
+]

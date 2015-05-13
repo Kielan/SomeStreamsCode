@@ -1,0 +1,69 @@
+"_id": '53aa4c843bd562c01edd2714',
+		"fname": 'Kielan',
+		"lname": 'Lemons',
+		"email": 'kielan@thegraduate.asia',
+		"phone_number": 6043600110,
+		"verified": true,
+		"age": 20,
+		"gender": 'male',
+		"role": 'tutor',
+		"created_at": new Date().toISOString(),
+                "updated_at": new Date().toISOString(),
+                "last_visit": "2015/4/13",
+                "timezone":7,
+		"subjects": [{
+			"category": { "en": 'physics' },
+			"levels": [{ "en": 'University' }]
+		}, {
+			"category": { "en": 'computer Science' },
+			"levels": [{ "en": 'University' }, { "en": 'GCSE' }]
+		}, {
+			"category": { "en": 'mathematics' },
+			"levels": [{ "en": 'GCSE' }]
+		}],
+		"qualifications": [{
+			"_id": '53ae6bfc02dda69463d66887',
+			"title": { "en": 'Bsc. Mathematics' },
+			"description": { "en": 'University of British Columbia' },
+		    "start": "2006/08",
+			"end": "2009/05",
+			"created_at": new Date().toISOString(),
+			"updated_at": new Date().toISOString()
+		}],
+		"experience": [],
+		"location": {
+			"coordinates": { "type": 'Point', "coordinates": [114, 22] }
+		},
+		"preferences": {
+			"default_price": 300,
+			"default_currency": 'HKD'
+		},
+		"statistics": {
+			"number_of_ratings": 3,
+			"hours_tutored": 34
+		},
+		"resume": {
+			"text": { 
+				"en": 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel adipiscing nisi, placerat sagittis arcu. Maecenas luctus eu neque ultrices gravida. Sed lacus eros, varius et consequat a, fermentum sed lorem. Proin vehicula erat metus, ac porttitor nisl varius at. Suspendisse congue augue nec neque interdum rhoncus nec vitae turpis. Etiam viverra pretium dolor a condimentum. Praesent posuere nulla odio, id auctor neque lacinia at. Vivamus pharetra lectus tempor mi convallis, eget molestie odio blandit. In id ligula pharetra, pulvinar enim ac, lobortis nunc. Nunc dui tellus, tincidunt vel rutrum sit amet, consectetur sit amet justo. Praesent id mauris laoreet.'
+			}
+		},
+	    "following": [],
+	    "followedBY": [],
+	    "socialWeb": {
+		"LinkedIn": "kielan-lemons",
+		"Twitter": "KielanLemons",
+		"Github": "Kielan",
+		"FaceBook": "KielanLemons",
+		"Memrise": "Kielan",
+		"AirPair": "Kielan",
+		"Interpals": "kielanlemons",
+		"Treehouse": "KielanLemons",
+		"Khan Academy": "Kielan",
+		"WeChat": "Kielan",
+		"Line": "Kielan",
+		"StackExchange": "KielanLemons"
+	    },
+"ReputationAGGScore": 0.13544,
+"Reviews": 6,
+"Meyers Briggs Type": "INTP",
+"Anneagram": 5

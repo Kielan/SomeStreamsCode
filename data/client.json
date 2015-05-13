@@ -1,0 +1,135 @@
+{
+    "_id": "53aa4ca13bd562c01edd2716",
+    "fname": "Christopher",
+    "lname": "Schrader",
+    "phone_number": 6043600114,
+    "verified": true,
+    "email": "c.schrader@gmail.com",
+    "age": 20,
+    "subjects": {
+        {
+            "category": {
+                "en": "physics"
+            },
+            "levels": {
+                {
+                    "en": "University"
+                }
+            }
+        },
+        {
+           "category": {
+                "en": "mathematics"
+            },
+            "levels": {
+                {
+                    "en": "HighSchool"
+                }
+            }
+        }
+    },
+    "gender": "male",
+    "role": "client",
+    "created_at" : "4/6/2014",
+    "updated_at" : "4/6/2014",
+    "location": {
+        "coordinates": {
+            "type": "Point",
+            "coordinates": {
+                114.152069,
+                22.266858
+            }
+        }
+    },
+    
+},
+{
+    "_id": "53aa4ca13bd562c01edd2715",
+    "fname": "Ron",
+    "lname": "Burgundy",
+    "phone_number": 6043600118,
+    "verified": true,
+    "email": "r.burgundy@gmail.com",
+    "age": 22,
+    "subjects": {
+        {
+            category: {
+                en: 'english'
+            },
+            levels: {
+                {
+                    en: 'IBHL'
+                }
+            }
+        },
+        {
+            category: {
+                en: 'mathematics'
+            },
+            levels: {
+                {
+                    en: 'University'
+                }
+            }
+        }
+    },
+    "gender": "male",
+    "role": "client",
+    "created_at": "4/3/2015",
+    "updated_at": "4/3/2015",
+    "location": {
+        "coordinates": {
+            "type": "Point",
+            "coordinates": {
+                114.152069,
+                22.266858
+            }
+        }
+    },
+    
+},
+{
+    "_id": "53aa4cbc3bd562c01edd2718",
+    "fname": "Brick",
+    "lname": "Tamland",
+    "phone_number": 6043600119,
+    "verified": true,
+    "email": "b.tamland@gmail.com",
+    "age": 23,
+    "subjects": {
+        {
+            category: {
+                en: 'history'
+            },
+            levels: {
+                {
+                    en: 'IBSL'
+                }
+            }
+        },
+        {
+            category: {
+                en: 'mathematics'
+            },
+            levels: {
+                {
+                    en: 'IBSL'
+                }
+            }
+        }
+    },
+    "gender": "male",
+    "role": "client",
+    "created_at": "4/6/2015",
+    "updated_at": "4/6/2015",
+    "location": {
+        "coordinates": {
+            "type": "Point",
+            "coordinates": {
+                114.152069,
+                22.266858
+            }
+        }
+    },
+    
+}

@@ -1,0 +1,17 @@
+{
+    "name": "CLIMongoStreamTest",
+    "version": "1.0.0",
+    "author": "kielan",
+    "license": "MIT",
+    "scripts": {
+	"seed":"node seedMongoStream.js"
+    },
+    "dependencies": {
+	  "commander": "2.7.1"
+	, "mongoose": "^3.8.24"
+	, "mongodb": "~1.4.8"
+	, "highland": "^2.2.0"
+	, "colors": "1.0.3"
+	, "node-file-walker": "*"
+    }
+}
